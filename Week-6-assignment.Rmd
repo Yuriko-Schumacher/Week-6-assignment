@@ -1,0 +1,14 @@
+---
+title: "Week-6-assignment"
+author: "Yuriko Schumacher"
+date: "3/12/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+data <- read_csv("data/airbnb.csv") %>% 
+  select(room_type, reviews, overall_sa, bedrooms, price)
+write.csv(data, file = "data/airbnb-reduced.csv", row.names = FALSE)
+```

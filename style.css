@@ -1,4 +1,29 @@
-html, body {
-    padding: 0px;
-    margin: 0px;
-} 
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+html,
+body {
+	padding: 0px;
+	margin: 0px;
+}
+
+* {
+	font-family: "Open Sans", sans-serif;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+.container {
+	width: 800px;
+	margin: auto;
+}
+
+.axis-label {
+	text-anchor: middle;
+}
+
+.legend {
+	font-size: 12px;
+}
